@@ -75,10 +75,6 @@ class Point2:
 		
 		return Point2(x, y)
 		
-	def __bool__(self):
-		
-		return self.x != 0 and self.y != 0
-		
 	def get(self):
 		
 		return (self.x, self.y)
@@ -190,10 +186,6 @@ class Vector2:
 		
 		return Vector2(start, end)
 		
-	def __bool__(self):
-		
-		return self.start.x != self.end.x and self.start.y != self.end.y
-		
 	def get(self):
 		
 		return (self.start.x, self.start.y, self.end.x, self.end.y)
@@ -289,10 +281,6 @@ class Point3:
 		z = self.z ^ other.z
 		
 		return Point3(x, y, z)
-		
-	def __bool__(self):
-		
-		return self.x != 0 and self.y != 0 and self.z != 0
 		
 	def get(self):
 		
@@ -404,10 +392,6 @@ class Vector3:
 		end ^= vector.end
 		
 		return Vector3(start, end)
-		
-	def __bool__(self):
-		
-		return self.start.x != self.end.x and self.start.y != self.end.y
 		
 	def get(self):
 		
